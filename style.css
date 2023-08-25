@@ -278,8 +278,8 @@ header ul li {
 
 .grid-about {
     width: 100%;
-    background-color:#4757b9;
-    color: white;
+    background-color: #d7dce6;
+    color: #333;
 }
 
 .grid-container {
@@ -289,15 +289,38 @@ header ul li {
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    grid-template-rows: repeat (2,100px);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 2rem;
-    border: 1px solid red;
 }
 
 .grid-box {
     width: 100%;
-    border: 1px solid red;
+    padding: 3rem 2rem;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-box p {
+    margin: 2rem 0 6rem;
+    text-align: justify;
+    font-size: 1,2rem;
+    line-height: 1.5;
+}
+
+.grid-box img {
+    display: block;
+    max-width: 100px ;
+    margin: 0 auto;
+   
+}
+
+.g1 {
+    grid-column: 1/4;
+}
+
+.g4 {
+    grid-column: 2/4;
 }
 
 footer {
