@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
@@ -19,7 +20,8 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color:#F9F9F4;
     color: #333;
-    
+    position: relative;
+    overflow-x: hidden;
 }
 
 a {
@@ -98,6 +100,46 @@ header {
   
 }
 
+.hamburger {
+    position: absolute;
+    top: 2.2rem;
+    right: 0.5rem;
+    z-index: 5;
+    width: 70px;
+    display: none;
+}
+
+.hamburger span {
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F9F9F4;
+    color:#333;
+    padding: 5rem 2rem;
+    transform: translateX(100%);
+}
+
+.hamburger-menu a {
+    color: #333;
+}
+
+.hamburger-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.hamburger-menu span {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -167,7 +209,7 @@ header ul li {
 
 .space {
     width: 100%;
-    height: 10em;
+    height: 10rem;
 }
 
 .about{
@@ -331,6 +373,39 @@ footer {
     color: white;
     padding: 5rem 10rem;
     text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .g1 {
+        grid-column: auto;
+    }
+    
+    .g4 {
+        grid-column: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .space {
+        height: 5rem;
+    }
+    
 }
 
 
