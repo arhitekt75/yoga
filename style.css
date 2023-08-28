@@ -123,6 +123,15 @@ header {
     color:#333;
     padding: 5rem 2rem;
     transform: translateX(100%);
+    z-index: 10;
+}
+
+.hs {
+    transform: translateX(0);
+}
+
+.stop-scrolling {
+    overflow: hidden;
 }
 
 .hamburger-menu a {
@@ -186,7 +195,7 @@ header ul li {
     background-size:cover;
     background-attachment: fixed;
     /* overflow: hidden; */
-   
+   z-index: 5;
 }
 
 .hero-txt {
