@@ -33,11 +33,19 @@ a {
 li {
     list-style-type: none;
     text-transform: uppercase;
+    transition: transform 1s ease-in-out;
 }
 
 li:hover{
     transform: scale(1.2);
-    text-decoration: underline;
+/*     text-decoration: underline;
+ */
+    border-bottom: 1px solid white;
+}
+
+.dark li:hover {
+    transform: scale(1);
+    border-bottom: 1px solid #333;
 }
 
 img {
